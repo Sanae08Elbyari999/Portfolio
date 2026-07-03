@@ -150,6 +150,102 @@
   @media (max-width:900px){
     .lang-switch{ margin-left:0; }
   }
+
+  /* --- Styles pour la section Certificats --- */
+  .certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+  .cert-card {
+    background: var(--bg-card, #1a1a1a);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border, rgba(255,255,255,0.08));
+    transition: transform .3s ease, box-shadow .3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .cert-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+  }
+  .cert-image-wrap {
+    width: 100%;
+    padding-top: 70%; /* ratio ~5:3.5 */
+    position: relative;
+    overflow: hidden;
+    background: #0a0a0a;
+  }
+  .cert-image-wrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform .4s ease;
+    border-bottom: 1px solid var(--border, rgba(255,255,255,0.05));
+  }
+  .cert-card:hover .cert-image-wrap img {
+    transform: scale(1.03);
+  }
+  .cert-body {
+    padding: 1.5rem 1.5rem 1.8rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .cert-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white, #fff);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+  .cert-desc {
+    font-size: 0.9rem;
+    color: var(--gray-lt, #aaa);
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    flex: 1;
+  }
+  .cert-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent, #64f0b8);
+    text-decoration: none;
+    border: 1.5px solid var(--accent, #64f0b8);
+    border-radius: 50px;
+    padding: 8px 18px;
+    transition: all .25s ease;
+    align-self: flex-start;
+    background: transparent;
+  }
+  .cert-download:hover {
+    background: var(--accent, #64f0b8);
+    color: var(--bg, #0a0a0a);
+    transform: translateY(-2px);
+  }
+  .cert-download svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  @media (max-width: 480px) {
+    .certs-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 </head>
 <body>
@@ -164,6 +260,8 @@
       <li><a href="#apropos" style="color: var(--accent);" data-fr="À propos" data-en="About">À propos</a></li>
       <li><a href="#experiences" data-fr="Expériences" data-en="Experience">Expériences</a></li>
       <li><a href="#projets" data-fr="Projets" data-en="Projects">Projets</a></li>
+      <!-- Nouveau lien vers la section Certificats -->
+      <li><a href="#certificats" data-fr="Certificats" data-en="Certificates">Certificats</a></li>
       <li><a href="#competences" data-fr="Compétences" data-en="Skills">Compétences</a></li>
       <li><a href="#formation" data-fr="Formation" data-en="Education">Formation</a></li>
       <li><a href="#contact" class="nav-cta" data-fr="Me contacter" data-en="Contact me">Me contacter</a></li>
@@ -565,6 +663,70 @@
         </div>
       </div>
 
+      <!-- PROJET CLOUD - CAN 2025 -->
+<div class="proj-card reveal visible">
+  <div class="proj-screenshot">
+    <img src="assets/images/can2025-screenshot.png" alt="Plateforme Multi-Cloud CAN 2025" class="proj-screenshot-img">
+  </div>
+  <div class="proj-icon-wrap">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+      <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+      <circle cx="12" cy="12" r="3"/>
+    </svg>
+  </div>
+  <div class="proj-name" data-fr="Plateforme Multi-Cloud CAN 2025" data-en="Multi-Cloud Platform CAN 2025">Plateforme Multi-Cloud CAN 2025</div>
+  <div class="proj-desc" data-fr="Architecture orientée services combinant AWS (Lambda/FaaS), Azure (IaaS) et Firebase (PaaS) pour une plateforme d'informations sportives." data-en="Service-oriented architecture combining AWS (Lambda/FaaS), Azure (IaaS), and Firebase (PaaS) for a sports information platform.">Architecture orientée services combinant AWS (Lambda/FaaS), Azure (IaaS) et Firebase (PaaS) pour une plateforme d'informations sportives.</div>
+  <div class="proj-tags">
+    <span class="tag">AWS Lambda</span><span class="tag">API Gateway</span>
+    <span class="tag">Azure VM</span><span class="tag">Firebase</span>
+    <span class="tag">React.js</span><span class="tag">Nginx</span>
+  </div>
+</div>
+
+<!-- PROJET ANALYSE E-COMMERCE -->
+<div class="proj-card reveal visible">
+  <div class="proj-screenshot">
+    <img src="assets/images/ecommerce-bi-screenshot.png" alt="Analyse E-commerce et Retours Produits" class="proj-screenshot-img">
+  </div>
+  <div class="proj-icon-wrap">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+      <path d="M3 3v18h18"/>
+      <rect x="7" y="12" width="3" height="6"/>
+      <rect x="12" y="8" width="3" height="10"/>
+      <rect x="17" y="5" width="3" height="13"/>
+    </svg>
+  </div>
+  <div class="proj-name" data-fr="Analyse E-commerce &amp; Retours Produits" data-en="E-commerce Performance &amp; Returns Analysis">Analyse E-commerce &amp; Retours Produits</div>
+  <div class="proj-desc" data-fr="Solution BI complète avec modélisation en étoile, ETL KNIME, et tableaux de bord Metabase/Power BI pour analyser l'impact des retours sur la rentabilité." data-en="Full BI solution with star schema modeling, KNIME ETL, and Metabase/Power BI dashboards to analyze returns impact on profitability.">Solution BI complète avec modélisation en étoile, ETL KNIME, et tableaux de bord Metabase/Power BI pour analyser l'impact des retours sur la rentabilité.</div>
+  <div class="proj-tags">
+    <span class="tag">KNIME</span><span class="tag">ETL</span>
+    <span class="tag">Metabase</span><span class="tag">Power BI</span>
+    <span class="tag">SQL</span><span class="tag">Modélisation</span>
+  </div>
+</div>
+
+<!-- PROJET SYSTÈME EMBARQUÉ -->
+<div class="proj-card reveal visible">
+  <div class="proj-screenshot">
+    <img src="assets/images/embarque-screenshot.png" alt="Système Embarqué Détection Somnolence" class="proj-screenshot-img">
+  </div>
+  <div class="proj-icon-wrap">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+      <rect x="2" y="3" width="20" height="14" rx="2"/>
+      <path d="M8 21l8 0M12 17v4"/>
+      <circle cx="12" cy="9" r="2"/>
+      <path d="M12 7v1M12 11v1"/>
+    </svg>
+  </div>
+  <div class="proj-name" data-fr="Détection Somnolence Conducteur (STM32)" data-en="Driver Drowsiness Detection (STM32)">Détection Somnolence Conducteur (STM32)</div>
+  <div class="proj-desc" data-fr="Système embarqué temps réel sur STM32 avec capteur MPU6050 (inclinaison tête) et LDR (fermeture yeux) – alertes visuelles et sonores via LCD, LEDs et buzzer." data-en="Real-time embedded system on STM32 with MPU6050 (head tilt) and LDR (eye closure) sensors – visual and audio alerts via LCD, LEDs, and buzzer.">Système embarqué temps réel sur STM32 avec capteur MPU6050 (inclinaison tête) et LDR (fermeture yeux) – alertes visuelles et sonores via LCD, LEDs et buzzer.</div>
+  <div class="proj-tags">
+    <span class="tag">STM32</span><span class="tag">C</span>
+    <span class="tag">MPU6050</span><span class="tag">Wokwi</span>
+    <span class="tag">LCD</span><span class="tag">Temps réel</span>
+  </div>
+</div>
+
       <div class="proj-card reveal visible">
         <div class="proj-screenshot">
           <img src="assets/images/farm.png" alt="Plateforme AgricoleDachboard – Microservices" class="proj-screenshot-img">
@@ -620,6 +782,55 @@
           <span class="tag">C</span><span class="tag">SDL</span><span class="tag">Algorithmique</span>
         </div>
       </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CERTIFICATS
+═══════════════════════════════════════════ -->
+<section id="certificats">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal" data-fr="Certifications" data-en="Certifications">Certifications</div>
+    <h2 class="section-title reveal" data-fr="Certificats<br>et attestations" data-en="Certificates<br>&amp; credentials">Certificats<br>et attestations</h2>
+    <p class="section-subtitle reveal" data-fr="Des certifications qui témoignent de mon engagement et de ma montée en compétence." data-en="Certifications that reflect my commitment and skill development.">Des certifications qui témoignent de mon engagement et de ma montée en compétence.</p>
+
+    <div class="certs-grid">
+
+      <!-- Certificat Agile -->
+      <div class="cert-card reveal">
+        <div class="cert-image-wrap">
+          <img src="assets/images/CETIFCAT_AGILE.PNG" alt="Certificat Agile" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%231a1a1a%22/%3E%3Ctext x=%2250%%22 y=%2250%%22 font-family=%22sans-serif%22 font-size=%2220%22 fill=%22%23666%22 text-anchor=%22middle%22 dy=%22.3em%22%3ECertificat Agile%3C/text%3E%3C/svg%3E'">
+        </div>
+        <div class="cert-body">
+          <div class="cert-name" data-fr="Certificat Méthodologie Agile" data-en="Agile Methodology Certificate">Certificat Méthodologie Agile</div>
+          <div class="cert-desc" data-fr="Formation certifiante sur les principes agiles, Scrum, Kanban et les rôles dans une équipe agile. Mise en pratique sur des cas concrets de gestion de projet itérative." data-en="Certified training on Agile principles, Scrum, Kanban, and roles in an Agile team. Hands-on practice on iterative project management.">
+            Formation certifiante sur les principes agiles, Scrum, Kanban et les rôles dans une équipe agile. Mise en pratique sur des cas concrets de gestion de projet itérative.
+          </div>
+          <a href="#" download class="cert-download">
+            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span data-fr="Télécharger" data-en="Download">Télécharger</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Certificat Green Energy Agency -->
+<div class="cert-card reveal">
+  <div class="cert-image-wrap">
+    <img src="assets/images/CERTIFCAT_GREEN_ENERGY.PNG" alt="Certificat Entrepreneuriat Green Energy Agency" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%231a1a1a%22/%3E%3Ctext x=%2250%%22 y=%2250%%22 font-family=%22sans-serif%22 font-size=%2220%22 fill=%22%23666%22 text-anchor=%22middle%22 dy=%22.3em%22%3ECertificat Entrepreneuriat%3C/text%3E%3C/svg%3E'">
+  </div>
+  <div class="cert-body">
+    <div class="cert-name" data-fr="Certificat – Entrepreneuriat" data-en="Certificate – Entrepreneurship">Certificat – Entrepreneuriat</div>
+    <div class="cert-desc" data-fr="Certificat de participation à la formation 'Les Jeunes et l'Entrepreneuriat' organisée par GREEN ENERGY AGENCY (23 février 2025). Acquisition de connaissances sur la création d'entreprise et les opportunités de financement." data-en="Participation certificate for the 'Youth and Entrepreneurship' training organized by GREEN ENERGY AGENCY (February 23, 2025). Gained knowledge on business creation and funding opportunities.">
+      Certificat de participation à la formation "Les Jeunes et l'Entrepreneuriat" organisée par GREEN ENERGY AGENCY (23 février 2025). Acquisition de connaissances sur la création d'entreprise et les opportunités de financement.
+    </div>
+    <a href="#" download class="cert-download">
+      <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <span data-fr="Télécharger" data-en="Download">Télécharger</span>
+    </a>
+  </div>
+</div>
 
     </div>
   </div>
