@@ -8,16 +8,16 @@ window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 50);
 });
 
-// ── TYPEWRITER ──────────────────────────────
-const roles = [
-  'Ingénieure Logiciel',
-  'Dev Full Stack',
-  'Passionnée IA & Data',
-  'Future Ingénieure ESI',
-];
+// ── TYPEWRITER (multilingue) ────────────────
+const rolesByLang = {
+  fr: ['Ingénieure Logiciel', 'Dev Full Stack', 'Passionnée IA & Data', 'Ingénieure ESI'],
+  en: ['Software Engineer', 'Full Stack Dev', 'Passionate about AI & Data', 'ESI Engineer'],
+};
 
 const el = document.getElementById('typewriter');
-let roleIdx = 0, charIdx = 0, deleting = false;
+let currentLang = 'fr';
+let roles = rolesByLang[currentLang];
+let roleIdx = 0, charIdx = 0, deleting = false, typewriterTimer = null;
 
 function type() {
   const current = roles[roleIdx];
@@ -25,7 +25,7 @@ function type() {
   if (!deleting) {
     el.textContent = current.slice(0, ++charIdx);
     if (charIdx === current.length) {
-      setTimeout(() => { deleting = true; type(); }, 1800);
+      typewriterTimer = setTimeout(() => { deleting = true; type(); }, 1800);
       return;
     }
   } else {
@@ -36,10 +36,18 @@ function type() {
     }
   }
 
-  setTimeout(type, deleting ? 50 : 90);
+  typewriterTimer = setTimeout(type, deleting ? 50 : 90);
 }
 
-if (el) setTimeout(type, 800);
+function restartTypewriter(lang) {
+  currentLang = lang;
+  roles = rolesByLang[lang];
+  roleIdx = 0; charIdx = 0; deleting = false;
+  clearTimeout(typewriterTimer);
+  if (el) type();
+}
+
+if (el) setTimeout(() => type(), 800);
 
 // ── SCROLL REVEAL ───────────────────────────
 const reveals = document.querySelectorAll('.reveal');
@@ -123,5 +131,27 @@ const navObserver = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.4 });
+
+(function(){
+  const btns = document.querySelectorAll('[data-lang-btn]');
+
+  function applyLang(lang){
+  document.querySelectorAll('[data-fr]').forEach(el => {
+    const val = el.getAttribute(lang === 'en' ? 'data-en' : 'data-fr');
+    if (val !== null) el.innerHTML = val;
+  });
+  document.documentElement.setAttribute('lang', lang);
+  btns.forEach(b => b.classList.toggle('active', b.dataset.langBtn === lang));
+  localStorage.setItem('portfolio-lang', lang);
+  restartTypewriter(lang); // ← ajout
+}
+
+  btns.forEach(b => {
+    b.addEventListener('click', () => applyLang(b.dataset.langBtn));
+  });
+
+  const saved = localStorage.getItem('portfolio-lang') || 'fr';
+  applyLang(saved);
+})();
 
 sections.forEach(s => navObserver.observe(s));

@@ -1,106 +1,156 @@
 <!DOCTYPE html>
 <!-- saved from url=(0066)file:///C:/Users/sanae/Documents/sanae_doc/CV/portfolio/index.html -->
-<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sanae EL-BYARI — Ingénieure Logiciel</title>
-  <meta name="description" content="Portfolio de Sanae EL-BYARI, ingénieure en génie logiciel diplômée de l&#39;ESI Rabat. Spécialisée en microservices, React, Spring Boot et IA.">
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sanae EL-BYARI — Ingénieure Logiciel" />
-  <meta property="og:description" content="Portfolio de Sanae EL-BYARI, ingénieure en génie logiciel diplômée de l'ESI Rabat. Spécialisée en microservices, React, Spring Boot et IA." />
-  <meta property="og:image" content="https://nimble-lolly-11b0fd.netlify.app/assets/images/photo_profile3.png" />
-  <meta property="og:url" content="https://nimble-lolly-11b0fd.netlify.app/" />
-  <meta property="og:locale" content="fr_FR" />
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* --- Icônes SVG modernes : ajustements pour remplacer les emojis --- */
-    .icon-inline{display:inline-block;vertical-align:-3px;margin-right:6px;stroke:currentColor;}
-    .hero-badge-icon,
-    .about-highlight-icon,
-    .edu-icon,
-    .contact-link-icon{display:flex;align-items:center;justify-content:center;}
-    .proj-screenshot-icon{display:flex;align-items:center;justify-content:center;opacity:.55;}
-    .proj-icon-wrap{display:flex;align-items:center;justify-content:center;}
-    .lang-flag{display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:50%;}
-    .lang-flag svg{display:block;}
+<html lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanae EL-BYARI — Ingénieure Logiciel</title>
+<meta name="description" content="Portfolio de Sanae EL-BYARI, ingénieure en génie logiciel diplômée de l'ESI Rabat. Spécialisée en microservices, React, Spring Boot et IA.">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Sanae EL-BYARI — Ingénieure Logiciel" />
+<meta property="og:description" content="Portfolio de Sanae EL-BYARI, ingénieure en génie logiciel diplômée de l'ESI Rabat. Spécialisée en microservices, React, Spring Boot et IA." />
+<meta property="og:image" content="https://nimble-lolly-11b0fd.netlify.app/assets/images/photo_profile3.png" />
+<meta property="og:url" content="https://nimble-lolly-11b0fd.netlify.app/" />
+<meta property="og:locale" content="fr_FR" />
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* --- Icônes SVG modernes : ajustements pour remplacer les emojis --- */
+  .icon-inline{display:inline-block;vertical-align:-3px;margin-right:6px;stroke:currentColor;}
+  .hero-badge-icon,
+  .about-highlight-icon,
+  .edu-icon,
+  .contact-link-icon{display:flex;align-items:center;justify-content:center;}
+  .proj-screenshot-icon{display:flex;align-items:center;justify-content:center;opacity:.55;}
+  .proj-icon-wrap{display:flex;align-items:center;justify-content:center;}
+  .lang-flag{display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:50%;}
+  .lang-flag svg{display:block;}
 
-    /* --- Espace vertical entre la photo et le texte (section À propos) --- */
-    .about-grid{row-gap:2.5rem;}
-    .about-info{margin-top:2.5rem;}
-    @media (max-width: 768px){
-      .about-info{margin-top:2rem;}
-    }
+  /* --- Espace vertical entre la photo et le texte (section À propos) --- */
+  .about-grid{row-gap:2.5rem;}
+  .about-info{margin-top:2.5rem;}
+  @media (max-width: 768px){
+    .about-info{margin-top:2rem;}
+  }
 
-    /* --- Bouton "télécharger le certificat" : harmonisé avec le design (outline sobre) --- */
-    .exp-header{position:relative;}
-    .exp-meta{
-      display:flex;
-      align-items:center;
-      gap:10px;
-    }
-    .btn-cert{
-      width:34px;
-      height:34px;
-      flex-shrink:0;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      border-radius:8px;
-      border:1.5px solid var(--border, rgba(0,0,0,.12));
-      background:transparent;
-      transition:all .25s ease;
-      text-decoration:none;
-    }
-    a.btn-cert,
-    a.btn-cert:link,
-    a.btn-cert:visited{
-      color: var(--gray-lt, #555);
-    }
-    a.btn-cert:hover,
-    a.btn-cert:focus{
-      background: var(--dark, #111);
-      border-color: var(--dark, #111);
-      color:#fff;
-      transform:translateY(-2px);
-    }
+  /* --- Bouton "télécharger le certificat" : harmonisé avec le design (outline sobre) --- */
+  .exp-header{position:relative;}
+  .exp-meta{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .btn-cert{
+    width:34px;
+    height:34px;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:8px;
+    border:1.5px solid var(--border, rgba(0,0,0,.12));
+    background:transparent;
+    transition:all .25s ease;
+    text-decoration:none;
+  }
+  a.btn-cert,
+  a.btn-cert:link,
+  a.btn-cert:visited{
+    color: var(--gray-lt, #555);
+  }
+  a.btn-cert:hover,
+  a.btn-cert:focus{
+    background: var(--dark, #111);
+    border-color: var(--dark, #111);
+    color:#fff;
+    transform:translateY(-2px);
+  }
 
-    /* --- Screenshots réels dans les cartes expérience --- */
-    .exp-screenshots{
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));
-      gap:10px;
-    }
-    .screenshot-img{
-      width:100%;
-      height:150px;
-      object-fit:cover;
-      object-position:top;
-      border-radius:10px;
-      border:1px solid var(--border, rgba(0,0,0,.08));
-      display:block;
-      transition:transform .3s ease;
-    }
-    .screenshot-img:hover{
-      transform:scale(1.02);
-    }
+  /* --- Screenshots réels dans les cartes expérience --- */
+  .exp-screenshots{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));
+    gap:10px;
+  }
+  .screenshot-img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    object-position:top;
+    border-radius:10px;
+    border:1px solid var(--border, rgba(0,0,0,.08));
+    display:block;
+    transition:transform .3s ease;
+  }
+  .screenshot-img:hover{
+    transform:scale(1.02);
+  }
 
-    /* --- Screenshots réels dans les cartes projet --- */
-    .proj-screenshot{
-      overflow:hidden;
-      position:relative;
-    }
-    .proj-screenshot-img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      object-position:top;
-      display:block;
-      transition:transform .4s ease;
-    }
-    .proj-card:hover .proj-screenshot-img{
-      transform:scale(1.04);
-    }
-  </style>
+  /* --- Screenshots réels dans les cartes projet --- */
+  .proj-screenshot{
+    overflow:hidden;
+    position:relative;
+  }
+  .proj-screenshot-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:top;
+    display:block;
+    transition:transform .4s ease;
+  }
+  .proj-card:hover .proj-screenshot-img{
+    transform:scale(1.04);
+  }
+
+  /* --- Logo entreprise à côté du titre --- */
+  .exp-logo{
+    height:42px;
+    width:auto;
+    min-width:42px;
+    max-width:90px;
+    object-fit:contain;
+    border-radius:8px;
+    background:#fff;
+    padding:5px 10px;
+    border:1px solid var(--border);
+    flex-shrink:0;
+  }
+
+  /* --- Sélecteur de langue --- */
+  .lang-switch{
+    display:flex;
+    align-items:center;
+    gap:2px;
+    background:var(--bg-card2);
+    border:1px solid var(--border);
+    border-radius:50px;
+    padding:3px;
+    margin-left:8px;
+  }
+  .lang-btn{
+    border:none;
+    background:transparent;
+    color:var(--gray);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:0.03em;
+    padding:5px 11px;
+    border-radius:50px;
+    cursor:pointer;
+    transition:all .25s ease;
+    font-family:var(--font-body);
+  }
+  .lang-btn.active{
+    background:var(--accent);
+    color:var(--bg);
+  }
+  .lang-btn:not(.active):hover{
+    color:var(--white);
+  }
+  @media (max-width:900px){
+    .lang-switch{ margin-left:0; }
+  }
+</style>
 </head>
 <body>
 
@@ -111,12 +161,18 @@
   <div class="nav-inner">
     <a class="nav-logo">sanae<span>.</span></a>
     <ul class="nav-links">
-      <li><a href="#apropos" style="color: var(--accent);">À propos</a></li>
-      <li><a href="#experiences">Expériences</a></li>
-      <li><a href="#projets" style="">Projets</a></li>
-      <li><a href="#competences">Compétences</a></li>
-      <li><a href="#formation">Formation</a></li>
-      <li><a href="#contact" class="nav-cta">Me contacter</a></li>
+      <li><a href="#apropos" style="color: var(--accent);" data-fr="À propos" data-en="About">À propos</a></li>
+      <li><a href="#experiences" data-fr="Expériences" data-en="Experience">Expériences</a></li>
+      <li><a href="#projets" data-fr="Projets" data-en="Projects">Projets</a></li>
+      <li><a href="#competences" data-fr="Compétences" data-en="Skills">Compétences</a></li>
+      <li><a href="#formation" data-fr="Formation" data-en="Education">Formation</a></li>
+      <li><a href="#contact" class="nav-cta" data-fr="Me contacter" data-en="Contact me">Me contacter</a></li>
+      <li>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang-btn="fr" type="button">FR</button>
+          <button class="lang-btn" data-lang-btn="en" type="button">EN</button>
+        </div>
+      </li>
     </ul>
   </div>
 </nav>
@@ -131,7 +187,7 @@
     <div class="hero-content">
       <div class="hero-greeting">
         👋
-        Salut, je suis
+        <span data-fr="Salut, je suis" data-en="Hi, I'm">Salut, je suis</span>
       </div>
 
       <h1 class="hero-name">
@@ -143,7 +199,7 @@
         <span class="typewriter-text" id="typewriter">Dev Full Sta</span><span class="cursor"></span>
       </p>
 
-      <p class="hero-desc">
+      <p class="hero-desc" data-fr="Diplômée de l'ESI Rabat en Génie Logiciel, passionnée par la construction de systèmes distribués, l'IA et la transformation digitale. Je transforme des idées complexes en solutions élégantes." data-en="Software Engineering graduate from ESI Rabat, passionate about building distributed systems, AI, and digital transformation. I turn complex ideas into elegant solutions.">
         Diplômée de l'ESI Rabat en Génie Logiciel, passionnée par la construction
         de systèmes distribués, l'IA et la transformation digitale. Je transforme
         des idées complexes en solutions élégantes.
@@ -152,30 +208,30 @@
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary">
           <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          Travailler ensemble
+          <span data-fr="Travailler ensemble" data-en="Let's work together">Travailler ensemble</span>
         </a>
         <a href="./CV_Sanae_EL-BYARI.pdf" download target="_blank" class="btn btn-outline">
-  <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-    <polyline points="7 10 12 15 17 10"/>
-    <line x1="12" y1="15" x2="12" y2="3"/>
-  </svg>
-  Télécharger mon CV
-</a>
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span data-fr="Télécharger mon CV" data-en="Download my CV">Télécharger mon CV</span>
+        </a>
       </div>
 
       <div class="hero-stats">
         <div class="stat">
           <span class="stat-num" data-count="4" data-suffix="+" data-animated="true">4+</span>
-          <span class="stat-label">Expériences</span>
+          <span class="stat-label" data-fr="Expériences" data-en="Experience">Expériences</span>
         </div>
         <div class="stat">
           <span class="stat-num" data-count="7" data-suffix="+" data-animated="true">7+</span>
-          <span class="stat-label">Projets</span>
+          <span class="stat-label" data-fr="Projets" data-en="Projects">Projets</span>
         </div>
         <div class="stat">
           <span class="stat-num" data-count="15" data-suffix="+" data-animated="true">15+</span>
-          <span class="stat-label">Technologies</span>
+          <span class="stat-label" data-fr="Technologies" data-en="Technologies">Technologies</span>
         </div>
       </div>
     </div>
@@ -184,7 +240,7 @@
     <div class="hero-image">
       <div class="hero-photo-wrap">
         <div class="hero-photo-bg"></div>
-        <img src="assets/images/photo_profile3.png" alt="Sanae EL-BYARI" class="hero-photo" onerror="this.style.display=&#39;none&#39;">
+        <img src="assets/images/photo_profile3.png" alt="Sanae EL-BYARI" class="hero-photo" onerror="this.style.display='none'">
 
         <!-- Badges flottants -->
         <div class="hero-badge badge-esi">
@@ -193,7 +249,7 @@
           </div>
           <div class="hero-badge-text">
             <strong>ESI Rabat</strong>
-            Ingénieure Logiciel
+            <span data-fr="Ingénieure Logiciel" data-en="Software Engineer">Ingénieure Logiciel</span>
           </div>
         </div>
 
@@ -202,8 +258,8 @@
             <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87L18.2 21 12 17.77 5.8 21 7 14.14l-5-4.87 7.1-1.01z"></path></svg>
           </div>
           <div class="hero-badge-text">
-            <strong>Mention A</strong>
-            Stage PFE 2026
+            <strong data-fr="Mention A" data-en="Highest Honors">Mention A</strong>
+            <span data-fr="Stage PFE 2026" data-en="Final-Year Internship 2026">Stage PFE 2026</span>
           </div>
         </div>
       </div>
@@ -225,13 +281,15 @@
           <img src="assets/images/photo5.png" alt="Sanae EL-BYARI">
         </div>
       </div>
-  
+
       <!-- Texte -->
       <div class="about-info reveal visible">
         <div>
-          <div class="section-eyebrow">À propos</div>
-          <h2 class="section-title">Passionnée de tech<br>&amp; de solutions.</h2>
-          <p style="font-size:14px; color:var(--gray-lt); line-height:1.8; margin-bottom:1.5rem;">
+          <div class="section-eyebrow" data-fr="À propos" data-en="About">À propos</div>
+          <h2 class="section-title" data-fr="Passionnée de tech<br>&amp; de solutions." data-en="Passionate about tech<br>&amp; solutions.">Passionnée de tech<br>&amp; de solutions.</h2>
+          <p style="font-size:14px; color:var(--gray-lt); line-height:1.8; margin-bottom:1.5rem;"
+             data-fr="Diplômée de l'École des Sciences d'Informatique de Rabat en Génie Logiciel, spécialisée dans le Développement des Systèmes d'Information et la Transformation Digitale. J'aime construire des architectures robustes et des interfaces qui ont du sens."
+             data-en="Graduate of the École des Sciences d'Informatique (ESI) Rabat in Software Engineering, specialized in Information Systems Development and Digital Transformation. I love building robust architectures and interfaces that make sense.">
             Diplômée de l'École des Sciences d'Informatique de Rabat en Génie Logiciel,
             spécialisée dans le Développement des Systèmes d'Information et la Transformation
             Digitale. J'aime construire des architectures robustes et des interfaces qui ont du sens.
@@ -242,7 +300,9 @@
           <div class="about-highlight-icon">
             <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="11" width="7" height="10"></rect><rect x="14" y="7" width="7" height="14"></rect><path d="M3 11l4-4 4 4M11 7V3h6"></path></svg>
           </div>
-          <div class="about-highlight-text">
+          <div class="about-highlight-text"
+               data-fr="<strong>Architecture Microservices</strong>Migration de Polysco (PFE, Mention A) — 5 modules livrés en production"
+               data-en="<strong>Microservices Architecture</strong>Polysco migration (Final-Year Project, Highest Honors) — 5 modules delivered to production">
             <strong>Architecture Microservices</strong>
             Migration de Polysco (PFE, Mention A) — 5 modules livrés en production
           </div>
@@ -252,7 +312,9 @@
           <div class="about-highlight-icon">
             <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M9 9h.01M15 9h.01M9 15c.5.7 1.5 1.2 3 1.2s2.5-.5 3-1.2"></path></svg>
           </div>
-          <div class="about-highlight-text">
+          <div class="about-highlight-text"
+               data-fr="<strong>IA &amp; Data Science</strong>Intérêt fort pour la science des données, les dashboards analytiques et l'IA appliquée"
+               data-en="<strong>AI &amp; Data Science</strong>Strong interest in data science, analytics dashboards, and applied AI">
             <strong>IA &amp; Data Science</strong>
             Intérêt fort pour la science des données, les dashboards analytiques et l'IA appliquée
           </div>
@@ -262,7 +324,9 @@
           <div class="about-highlight-icon">
             <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
           </div>
-          <div class="about-highlight-text">
+          <div class="about-highlight-text"
+               data-fr="<strong>Rabat, Maroc</strong>Disponible pour des opportunités en présentiel et remote"
+               data-en="<strong>Rabat, Morocco</strong>Available for on-site and remote opportunities">
             <strong>Rabat, Maroc</strong>
             Disponible pour des opportunités en présentiel et remote
           </div>
@@ -288,9 +352,9 @@
 ═══════════════════════════════════════════ -->
 <section id="experiences">
   <div class="section-inner">
-    <div class="section-eyebrow reveal visible">Parcours</div>
-    <h2 class="section-title reveal visible">Expériences<br>professionnelles</h2>
-    <p class="section-subtitle reveal visible">Des projets concrets, des technologies modernes, des livrables réels.</p>
+    <div class="section-eyebrow reveal visible" data-fr="Parcours" data-en="Journey">Parcours</div>
+    <h2 class="section-title reveal visible" data-fr="Expériences<br>professionnelles" data-en="Professional<br>Experience">Expériences<br>professionnelles</h2>
+    <p class="section-subtitle reveal visible" data-fr="Des projets concrets, des technologies modernes, des livrables réels." data-en="Real-world projects, modern technologies, real deliverables.">Des projets concrets, des technologies modernes, des livrables réels.</p>
 
     <div class="exp-timeline">
 
@@ -299,23 +363,24 @@
         <div class="exp-header">
           <div class="exp-title-wrap">
             <div class="exp-title">
-              Stagiaire PFE – Migration vers Microservices
+              <img src="logo-sinone.png" alt="Sinone Expert Univers" class="exp-logo" onerror="this.style.display='none'">
+              <span data-fr="Stagiaire PFE – Migration vers Microservices" data-en="Final-Year Intern – Microservices Migration">Stagiaire PFE – Migration vers Microservices</span>
               <span class="badge-mention">
                 <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="display:inline-block;vertical-align:-2px;margin-right:3px;"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87L18.2 21 12 17.77 5.8 21 7 14.14l-5-4.87 7.1-1.01z"></path></svg>
-                Mention A
+                <span data-fr="Mention A" data-en="Highest Honors">Mention A</span>
               </span>
             </div>
-            <div class="exp-company">Sinone Expert Univers · Rabat</div>
+            <div class="exp-company">Sinone Expert Univers · <span data-fr="Rabat" data-en="Rabat">Rabat</span></div>
           </div>
           <div class="exp-meta">
-            <div class="exp-date">Fév. 2026 – Juil. 2026</div>
+            <div class="exp-date" data-fr="Fév. 2026 – Juil. 2026" data-en="Feb. 2026 – Jul. 2026">Fév. 2026 – Juil. 2026</div>
             <a href="./Certificat_sinone.pdf" download target="_blank" class="btn-cert" title="Télécharger le certificat">
-  <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-    <polyline points="7 10 12 15 17 10"/>
-    <line x1="12" y1="15" x2="12" y2="3"/>
-  </svg>
-</a>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -328,11 +393,11 @@
         </div>
 
         <ul class="exp-bullets">
-          <li>Analyse des processus financiers du système monolithique Polysco et conception de l'architecture cible en microservices</li>
-          <li>Développement des microservices paiement (reçus, chèques, recouvrement) — Spring Boot, API REST, Feign, Apache Kafka</li>
-          <li>Sécurisation des APIs avec Keycloak OAuth2/JWT, gestion des rôles RBAC, journalisation et audit des transactions</li>
-          <li>Frontend React.js (Vite, TanStack Router, Tailwind CSS) — modules paiement, recouvrement et blocage automatique des impayés</li>
-          <li>Pipeline CI/CD Jenkins (SonarQube, Docker Build, Harbor) et conteneurisation Docker — 5 modules opérationnels livrés</li>
+          <li data-fr="Analyse des processus financiers du système monolithique Polysco et conception de l'architecture cible en microservices" data-en="Analyzed the financial processes of the monolithic Polysco system and designed the target microservices architecture">Analyse des processus financiers du système monolithique Polysco et conception de l'architecture cible en microservices</li>
+          <li data-fr="Développement des microservices paiement (reçus, chèques, recouvrement) — Spring Boot, API REST, Feign, Apache Kafka" data-en="Developed payment microservices (receipts, checks, collections) — Spring Boot, REST API, Feign, Apache Kafka">Développement des microservices paiement (reçus, chèques, recouvrement) — Spring Boot, API REST, Feign, Apache Kafka</li>
+          <li data-fr="Sécurisation des APIs avec Keycloak OAuth2/JWT, gestion des rôles RBAC, journalisation et audit des transactions" data-en="Secured APIs with Keycloak OAuth2/JWT, RBAC role management, transaction logging and auditing">Sécurisation des APIs avec Keycloak OAuth2/JWT, gestion des rôles RBAC, journalisation et audit des transactions</li>
+          <li data-fr="Frontend React.js (Vite, TanStack Router, Tailwind CSS) — modules paiement, recouvrement et blocage automatique des impayés" data-en="React.js frontend (Vite, TanStack Router, Tailwind CSS) — payment, collections and automatic unpaid-invoice blocking modules">Frontend React.js (Vite, TanStack Router, Tailwind CSS) — modules paiement, recouvrement et blocage automatique des impayés</li>
+          <li data-fr="Pipeline CI/CD Jenkins (SonarQube, Docker Build, Harbor) et conteneurisation Docker — 5 modules opérationnels livrés" data-en="Jenkins CI/CD pipeline (SonarQube, Docker Build, Harbor) and Docker containerization — 5 operational modules delivered">Pipeline CI/CD Jenkins (SonarQube, Docker Build, Harbor) et conteneurisation Docker — 5 modules opérationnels livrés</li>
         </ul>
         <div class="tags">
           <span class="tag">Spring Boot</span><span class="tag">Apache Kafka</span><span class="tag">Keycloak</span>
@@ -345,18 +410,21 @@
       <div class="exp-card reveal visible">
         <div class="exp-header">
           <div class="exp-title-wrap">
-            <div class="exp-title">Stagiaire – Application Mobile Sécurité Citoyenne (SafeFes)</div>
-            <div class="exp-company">SOFRETIM · Casablanca</div>
+            <div class="exp-title">
+              <img src="logo-sofretim.png" alt="SOFRETIM" class="exp-logo" onerror="this.style.display='none'">
+              <span data-fr="Stagiaire – Application Mobile Sécurité Citoyenne (SafeFes)" data-en="Intern – Citizen Safety Mobile App (SafeFes)">Stagiaire – Application Mobile Sécurité Citoyenne (SafeFes)</span>
+            </div>
+            <div class="exp-company">SOFRETIM · <span data-fr="Casablanca" data-en="Casablanca">Casablanca</span></div>
           </div>
           <div class="exp-meta">
-            <div class="exp-date">2025 · un mois</div>
+            <div class="exp-date" data-fr="2025 · un mois" data-en="2025 · one month">2025 · un mois</div>
             <a href="./Certificat_sofretim.pdf" download target="_blank" class="btn-cert" title="Télécharger le certificat">
-  <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-    <polyline points="7 10 12 15 17 10"/>
-    <line x1="12" y1="15" x2="12" y2="3"/>
-  </svg>
-</a>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -367,12 +435,12 @@
         </div>
 
         <ul class="exp-bullets">
-          <li>Application mobile de signalement anonyme d'incidents en temps réel (incendies, violences, agressions)</li>
-          <li>Géolocalisation automatique et transmission instantanée aux autorités locales compétentes</li>
-          <li>Backoffice sécurisé RBAC — visualisation des incidents sur carte, consultation des médias, prise de décision</li>
-          <li>Tableaux de bord Streamlit pour le suivi analytique des incidents signalés</li>
-          <li>Fonctionnalité d'itinéraire sécurisé — détection des zones à risque et proposition de trajet alternatif</li>
-          <li>Centralisation via Orion Context Broker (FIWARE) et MongoDB</li>
+          <li data-fr="Application mobile de signalement anonyme d'incidents en temps réel (incendies, violences, agressions)" data-en="Mobile app for anonymous real-time incident reporting (fires, violence, assaults)">Application mobile de signalement anonyme d'incidents en temps réel (incendies, violences, agressions)</li>
+          <li data-fr="Géolocalisation automatique et transmission instantanée aux autorités locales compétentes" data-en="Automatic geolocation and instant transmission to relevant local authorities">Géolocalisation automatique et transmission instantanée aux autorités locales compétentes</li>
+          <li data-fr="Backoffice sécurisé RBAC — visualisation des incidents sur carte, consultation des médias, prise de décision" data-en="Secure RBAC backoffice — map-based incident visualization, media review, decision-making">Backoffice sécurisé RBAC — visualisation des incidents sur carte, consultation des médias, prise de décision</li>
+          <li data-fr="Tableaux de bord Streamlit pour le suivi analytique des incidents signalés" data-en="Streamlit dashboards for analytical tracking of reported incidents">Tableaux de bord Streamlit pour le suivi analytique des incidents signalés</li>
+          <li data-fr="Fonctionnalité d'itinéraire sécurisé — détection des zones à risque et proposition de trajet alternatif" data-en="Safe-route feature — risk zone detection and alternative route suggestions">Fonctionnalité d'itinéraire sécurisé — détection des zones à risque et proposition de trajet alternatif</li>
+          <li data-fr="Centralisation via Orion Context Broker (FIWARE) et MongoDB" data-en="Data centralization via Orion Context Broker (FIWARE) and MongoDB">Centralisation via Orion Context Broker (FIWARE) et MongoDB</li>
         </ul>
         <div class="tags">
           <span class="tag">React Native</span><span class="tag">Streamlit</span>
@@ -384,18 +452,21 @@
       <div class="exp-card reveal visible">
         <div class="exp-header">
           <div class="exp-title-wrap">
-            <div class="exp-title">Stagiaire – Numérisation des Réunions de Performance</div>
-            <div class="exp-company">OCP · Jorf Lasfar</div>
+            <div class="exp-title">
+              <img src="logo-ocp.png" alt="OCP" class="exp-logo" onerror="this.style.display='none'">
+              <span data-fr="Stagiaire – Numérisation des Réunions de Performance" data-en="Intern – Digitization of Performance Meetings">Stagiaire – Numérisation des Réunions de Performance</span>
+            </div>
+            <div class="exp-company">OCP · <span data-fr="Jorf Lasfar" data-en="Jorf Lasfar">Jorf Lasfar</span></div>
           </div>
           <div class="exp-meta">
-            <div class="exp-date">2024 . un mois</div>
+            <div class="exp-date" data-fr="2024 · un mois" data-en="2024 · one month">2024 . un mois</div>
             <a href="./Certificat_ocp.pdf" download target="_blank" class="btn-cert" title="Télécharger le certificat">
-  <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-    <polyline points="7 10 12 15 17 10"/>
-    <line x1="12" y1="15" x2="12" y2="3"/>
-  </svg>
-</a>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -405,9 +476,9 @@
         </div>
 
         <ul class="exp-bullets">
-          <li>Application web avec import automatique de fichiers Excel et extraction des données via Pandas</li>
-          <li>Dashboard affichant des KPIs et graphiques de performance générés dynamiquement</li>
-          <li>Automatisation de la génération de rapports PowerPoint exportables en un clic</li>
+          <li data-fr="Application web avec import automatique de fichiers Excel et extraction des données via Pandas" data-en="Web app with automatic Excel file import and data extraction via Pandas">Application web avec import automatique de fichiers Excel et extraction des données via Pandas</li>
+          <li data-fr="Dashboard affichant des KPIs et graphiques de performance générés dynamiquement" data-en="Dashboard displaying KPIs and dynamically generated performance charts">Dashboard affichant des KPIs et graphiques de performance générés dynamiquement</li>
+          <li data-fr="Automatisation de la génération de rapports PowerPoint exportables en un clic" data-en="Automated one-click generation of exportable PowerPoint reports">Automatisation de la génération de rapports PowerPoint exportables en un clic</li>
         </ul>
         <div class="tags">
           <span class="tag">Python</span><span class="tag">Flask</span>
@@ -419,18 +490,21 @@
       <div class="exp-card reveal visible">
         <div class="exp-header">
           <div class="exp-title-wrap">
-            <div class="exp-title">Stagiaire – Plateforme e-commerce vidéo</div>
-            <div class="exp-company">MediaTower · Fès (à distance)</div>
+            <div class="exp-title">
+              <img src="logo-mediatower.png" alt="MediaTower" class="exp-logo" onerror="this.style.display='none'">
+              <span data-fr="Stagiaire – Plateforme e-commerce vidéo" data-en="Intern – Video E-commerce Platform">Stagiaire – Plateforme e-commerce vidéo</span>
+            </div>
+            <div class="exp-company">MediaTower · <span data-fr="Fès (à distance)" data-en="Fez (remote)">Fès (à distance)</span></div>
           </div>
           <div class="exp-meta">
-            <div class="exp-date">2025 · 3 mois</div>
+            <div class="exp-date" data-fr="2025 · 3 mois" data-en="2025 · 3 months">2025 · 3 mois</div>
             <a href="./Certificat_mediatore.pdf" download target="_blank" class="btn-cert" title="Télécharger le certificat">
-  <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-    <polyline points="7 10 12 15 17 10"/>
-    <line x1="12" y1="15" x2="12" y2="3"/>
-  </svg>
-</a>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -440,9 +514,9 @@
         </div>
 
         <ul class="exp-bullets">
-          <li>Frontend d'une marketplace marocaine où les produits sont présentés via des vidéos (modèle Jumia / Alibaba)</li>
-          <li>Lecteurs vidéo interactifs, espace vendeur avec tableau de bord, panier interactif et navigation produits</li>
-          <li>Tableaux de bord analytiques en temps réel — KPIs, commandes et performances vendeurs</li>
+          <li data-fr="Frontend d'une marketplace marocaine où les produits sont présentés via des vidéos (modèle Jumia / Alibaba)" data-en="Frontend for a Moroccan marketplace where products are showcased via videos (Jumia / Alibaba model)">Frontend d'une marketplace marocaine où les produits sont présentés via des vidéos (modèle Jumia / Alibaba)</li>
+          <li data-fr="Lecteurs vidéo interactifs, espace vendeur avec tableau de bord, panier interactif et navigation produits" data-en="Interactive video players, seller dashboard area, interactive cart and product navigation">Lecteurs vidéo interactifs, espace vendeur avec tableau de bord, panier interactif et navigation produits</li>
+          <li data-fr="Tableaux de bord analytiques en temps réel — KPIs, commandes et performances vendeurs" data-en="Real-time analytics dashboards — KPIs, orders, and seller performance">Tableaux de bord analytiques en temps réel — KPIs, commandes et performances vendeurs</li>
         </ul>
         <div class="tags"><span class="tag">React.js</span></div>
       </div>
@@ -456,9 +530,9 @@
 ═══════════════════════════════════════════ -->
 <section id="projets">
   <div class="section-inner">
-    <div class="section-eyebrow reveal visible">Académique</div>
-    <h2 class="section-title reveal visible">Projets<br>universitaires</h2>
-    <p class="section-subtitle reveal visible">Des projets concrets réalisés à l'ESI, couvrant mobile, web, desktop et IA.</p>
+    <div class="section-eyebrow reveal visible" data-fr="Académique" data-en="Academic">Académique</div>
+    <h2 class="section-title reveal visible" data-fr="Projets<br>universitaires" data-en="Academic<br>Projects">Projets<br>universitaires</h2>
+    <p class="section-subtitle reveal visible" data-fr="Des projets concrets réalisés à l'ESI, couvrant mobile, web, desktop et IA." data-en="Real projects built at ESI, spanning mobile, web, desktop, and AI.">Des projets concrets réalisés à l'ESI, couvrant mobile, web, desktop et IA.</p>
 
     <div class="proj-grid">
 
@@ -469,8 +543,8 @@
         <div class="proj-icon-wrap">
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M2 9h20M9 4v16"></path></svg>
         </div>
-        <div class="proj-name">Plateforme Food Delivery – Microservices</div>
-        <div class="proj-desc">Plateforme complète (clients, restaurants, admin) avec architecture microservices, authentification JWT et déploiement Kubernetes.</div>
+        <div class="proj-name" data-fr="Plateforme Food Delivery – Microservices" data-en="Food Delivery Platform – Microservices">Plateforme Food Delivery – Microservices</div>
+        <div class="proj-desc" data-fr="Plateforme complète (clients, restaurants, admin) avec architecture microservices, authentification JWT et déploiement Kubernetes." data-en="Full platform (customers, restaurants, admin) with microservices architecture, JWT authentication, and Kubernetes deployment.">Plateforme complète (clients, restaurants, admin) avec architecture microservices, authentification JWT et déploiement Kubernetes.</div>
         <div class="proj-tags">
           <span class="tag">Spring Boot</span><span class="tag">Flutter</span>
           <span class="tag">Angular</span><span class="tag">Docker</span><span class="tag">K8s</span>
@@ -484,8 +558,8 @@
         <div class="proj-icon-wrap">
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 3v18M5 8l-3 6a3 3 0 0 0 6 0l-3-6ZM19 8l-3 6a3 3 0 0 0 6 0l-3-6Z"></path><path d="M4 21h16M3 8h6M15 8h6"></path></svg>
         </div>
-        <div class="proj-name">Application de consultation juridique</div>
-        <div class="proj-desc">Application mobile React Native connectée à un backend Spring Boot pour la consultation et le suivi de dossiers juridiques.</div>
+        <div class="proj-name" data-fr="Application de consultation juridique" data-en="Legal Consultation App">Application de consultation juridique</div>
+        <div class="proj-desc" data-fr="Application mobile React Native connectée à un backend Spring Boot pour la consultation et le suivi de dossiers juridiques." data-en="React Native mobile app connected to a Spring Boot backend for legal case consultation and tracking.">Application mobile React Native connectée à un backend Spring Boot pour la consultation et le suivi de dossiers juridiques.</div>
         <div class="proj-tags">
           <span class="tag">React Native</span><span class="tag">Spring Boot</span>
         </div>
@@ -498,8 +572,8 @@
         <div class="proj-icon-wrap">
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 3v18h18"></path><rect x="7" y="12" width="3" height="6"></rect><rect x="12" y="8" width="3" height="10"></rect><rect x="17" y="5" width="3" height="13"></rect></svg>
         </div>
-        <div class="proj-name">Dashboard agricole – Power BI</div>
-        <div class="proj-desc">Dashboard interactif Power BI pour la gestion d'une ferme pédagogique — bétail, ventes, production avec visualisations dynamiques.</div>
+        <div class="proj-name" data-fr="Dashboard agricole – Power BI" data-en="Agricultural Dashboard – Power BI">Dashboard agricole – Power BI</div>
+        <div class="proj-desc" data-fr="Dashboard interactif Power BI pour la gestion d'une ferme pédagogique — bétail, ventes, production avec visualisations dynamiques." data-en="Interactive Power BI dashboard for managing a teaching farm — livestock, sales, and production with dynamic visualizations.">Dashboard interactif Power BI pour la gestion d'une ferme pédagogique — bétail, ventes, production avec visualisations dynamiques.</div>
         <div class="proj-tags">
           <span class="tag">Power BI</span><span class="tag">ETL</span><span class="tag">OLAP</span>
         </div>
@@ -512,8 +586,8 @@
         <div class="proj-icon-wrap">
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"></path></svg>
         </div>
-        <div class="proj-name">Gestion d'événements – JavaFX</div>
-        <div class="proj-desc">Application desktop CRUD complète pour la gestion de clients, menus et événements avec persistance PostgreSQL via JDBC.</div>
+        <div class="proj-name" data-fr="Gestion d'événements – JavaFX" data-en="Event Management – JavaFX">Gestion d'événements – JavaFX</div>
+        <div class="proj-desc" data-fr="Application desktop CRUD complète pour la gestion de clients, menus et événements avec persistance PostgreSQL via JDBC." data-en="Full CRUD desktop app for managing clients, menus, and events with PostgreSQL persistence via JDBC.">Application desktop CRUD complète pour la gestion de clients, menus et événements avec persistance PostgreSQL via JDBC.</div>
         <div class="proj-tags">
           <span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">PostgreSQL</span>
         </div>
@@ -526,8 +600,8 @@
         <div class="proj-icon-wrap">
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4M8 16h.01M16 16h.01"></path></svg>
         </div>
-        <div class="proj-name">Base de connaissances avec IA</div>
-        <div class="proj-desc">Système d'orientation pour lycéens avec chatbot conversationnel piloté par une plateforme IA dédiée et base de connaissances structurée.</div>
+        <div class="proj-name" data-fr="Base de connaissances avec IA" data-en="AI-Powered Knowledge Base">Base de connaissances avec IA</div>
+        <div class="proj-desc" data-fr="Système d'orientation pour lycéens avec chatbot conversationnel piloté par une plateforme IA dédiée et base de connaissances structurée." data-en="Guidance system for high school students with a conversational chatbot powered by a dedicated AI platform and structured knowledge base.">Système d'orientation pour lycéens avec chatbot conversationnel piloté par une plateforme IA dédiée et base de connaissances structurée.</div>
         <div class="proj-tags">
           <span class="tag">IA</span><span class="tag">Chatbot</span><span class="tag">NLP</span>
         </div>
@@ -540,8 +614,8 @@
         <div class="proj-icon-wrap">
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"></rect><path d="M6 10v4M4 12h4M14.5 10.5l1 1 2-2M17 13.5l1 1 2-2"></path></svg>
         </div>
-        <div class="proj-name">Jeu Wordle – C + SDL</div>
-        <div class="proj-desc">Jeu Wordle en C avec bibliothèque graphique SDL — interactions utilisateur, affichage dynamique et logique de jeu optimisée.</div>
+        <div class="proj-name" data-fr="Jeu Wordle – C + SDL" data-en="Wordle Game – C + SDL">Jeu Wordle – C + SDL</div>
+        <div class="proj-desc" data-fr="Jeu Wordle en C avec bibliothèque graphique SDL — interactions utilisateur, affichage dynamique et logique de jeu optimisée." data-en="Wordle game built in C with the SDL graphics library — user interactions, dynamic rendering, and optimized game logic.">Jeu Wordle en C avec bibliothèque graphique SDL — interactions utilisateur, affichage dynamique et logique de jeu optimisée.</div>
         <div class="proj-tags">
           <span class="tag">C</span><span class="tag">SDL</span><span class="tag">Algorithmique</span>
         </div>
@@ -559,15 +633,15 @@
     <div class="skills-header-grid">
 
       <div>
-        <div class="section-eyebrow reveal">Stack</div>
-        <h2 class="section-title reveal">Compétences<br>techniques</h2>
-        <p class="section-subtitle reveal">Un stack polyvalent couvrant le backend distribué, le frontend moderne, la data et le DevOps.</p>
+        <div class="section-eyebrow reveal" data-fr="Stack" data-en="Stack">Stack</div>
+        <h2 class="section-title reveal" data-fr="Compétences<br>techniques" data-en="Technical<br>Skills">Compétences<br>techniques</h2>
+        <p class="section-subtitle reveal" data-fr="Un stack polyvalent couvrant le backend distribué, le frontend moderne, la data et le DevOps." data-en="A versatile stack covering distributed backend, modern frontend, data, and DevOps.">Un stack polyvalent couvrant le backend distribué, le frontend moderne, la data et le DevOps.</p>
       </div>
 
       <div class="skills-grid">
 
         <div class="skill-block reveal">
-          <div class="skill-cat">Langages</div>
+          <div class="skill-cat" data-fr="Langages" data-en="Languages">Langages</div>
           <div class="tags">
             <span class="tag">Java</span><span class="tag">JavaScript</span>
             <span class="tag">Python</span><span class="tag">PHP</span>
@@ -576,7 +650,7 @@
         </div>
 
         <div class="skill-block reveal">
-          <div class="skill-cat">Frontend</div>
+          <div class="skill-cat" data-fr="Frontend" data-en="Frontend">Frontend</div>
           <div class="tags">
             <span class="tag">React.js</span><span class="tag">React Native</span>
             <span class="tag">Flutter</span><span class="tag">Angular</span>
@@ -585,7 +659,7 @@
         </div>
 
         <div class="skill-block reveal">
-          <div class="skill-cat">Backend &amp; APIs</div>
+          <div class="skill-cat" data-fr="Backend &amp; APIs" data-en="Backend &amp; APIs">Backend &amp; APIs</div>
           <div class="tags">
             <span class="tag">Spring Boot</span><span class="tag">Flask</span>
             <span class="tag">REST API</span><span class="tag">Kafka</span>
@@ -594,7 +668,7 @@
         </div>
 
         <div class="skill-block reveal">
-          <div class="skill-cat">Bases de données</div>
+          <div class="skill-cat" data-fr="Bases de données" data-en="Databases">Bases de données</div>
           <div class="tags">
             <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span>
             <span class="tag">MariaDB</span>
@@ -602,7 +676,7 @@
         </div>
 
         <div class="skill-block reveal">
-          <div class="skill-cat">Sécurité</div>
+          <div class="skill-cat" data-fr="Sécurité" data-en="Security">Sécurité</div>
           <div class="tags">
             <span class="tag">Keycloak</span><span class="tag">OAuth2</span>
             <span class="tag">JWT</span><span class="tag">RBAC</span>
@@ -610,7 +684,7 @@
         </div>
 
         <div class="skill-block reveal">
-          <div class="skill-cat">DevOps</div>
+          <div class="skill-cat" data-fr="DevOps" data-en="DevOps">DevOps</div>
           <div class="tags">
             <span class="tag">Docker</span><span class="tag">Kubernetes</span>
             <span class="tag">Jenkins</span><span class="tag">SonarQube</span>
@@ -619,7 +693,7 @@
         </div>
 
         <div class="skill-block reveal">
-          <div class="skill-cat">Data &amp; BI</div>
+          <div class="skill-cat" data-fr="Data &amp; BI" data-en="Data &amp; BI">Data &amp; BI</div>
           <div class="tags">
             <span class="tag">Power BI</span><span class="tag">Pandas</span>
             <span class="tag">Streamlit</span><span class="tag">ETL</span>
@@ -628,7 +702,7 @@
         </div>
 
         <div class="skill-block reveal">
-          <div class="skill-cat">Cloud &amp; IoT</div>
+          <div class="skill-cat" data-fr="Cloud &amp; IoT" data-en="Cloud &amp; IoT">Cloud &amp; IoT</div>
           <div class="tags">
             <span class="tag">FIWARE</span>
             <span class="tag">Orion Context Broker</span>
@@ -646,8 +720,8 @@
 ═══════════════════════════════════════════ -->
 <section id="formation">
   <div class="section-inner">
-    <div class="section-eyebrow reveal">Parcours académique</div>
-    <h2 class="section-title reveal">Formation</h2>
+    <div class="section-eyebrow reveal" data-fr="Parcours académique" data-en="Academic Path">Parcours académique</div>
+    <h2 class="section-title reveal" data-fr="Formation" data-en="Education">Formation</h2>
 
     <div class="edu-grid">
 
@@ -657,9 +731,9 @@
             <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"></path></svg>
           </div>
           <div class="edu-text">
-            <div class="edu-deg">Diplôme d'Ingénieur d'État – Génie Logiciel</div>
-            <div class="edu-school">École des Sciences d'Informatique (ESI) · Rabat</div>
-            <div class="edu-spec">Filière : Développement des SI &amp; Transformation Digitale</div>
+            <div class="edu-deg" data-fr="Diplôme d'Ingénieur d'État – Génie Logiciel" data-en="State Engineering Degree – Software Engineering">Diplôme d'Ingénieur d'État – Génie Logiciel</div>
+            <div class="edu-school" data-fr="École des Sciences d'Informatique (ESI) · Rabat" data-en="École des Sciences d'Informatique (ESI) · Rabat">École des Sciences d'Informatique (ESI) · Rabat</div>
+            <div class="edu-spec" data-fr="Filière : Développement des SI &amp; Transformation Digitale" data-en="Track: Information Systems Development &amp; Digital Transformation">Filière : Développement des SI &amp; Transformation Digitale</div>
           </div>
         </div>
         <div class="edu-date">2023 – 2026</div>
@@ -671,9 +745,9 @@
             <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
           </div>
           <div class="edu-text">
-            <div class="edu-deg">Classes Préparatoires aux Grandes Écoles (CPGE)</div>
-            <div class="edu-school">Mathématiques &amp; Physique</div>
-            <div class="edu-spec">Admise après deux années de CPGE dans une grande école nationale</div>
+            <div class="edu-deg" data-fr="Classes Préparatoires aux Grandes Écoles (CPGE)" data-en="Preparatory Classes for Elite Schools (CPGE)">Classes Préparatoires aux Grandes Écoles (CPGE)</div>
+            <div class="edu-school" data-fr="Mathématiques &amp; Physique" data-en="Mathematics &amp; Physics">Mathématiques &amp; Physique</div>
+            <div class="edu-spec" data-fr="Admise après deux années de CPGE dans une grande école nationale" data-en="Admitted after two years of CPGE into a top national engineering school">Admise après deux années de CPGE dans une grande école nationale</div>
           </div>
         </div>
         <div class="edu-date">2021 – 2023</div>
@@ -683,25 +757,34 @@
 
     <!-- Langues -->
     <div style="margin-top:3rem;">
-      <div class="section-eyebrow reveal" style="margin-bottom:1rem;">Langues</div>
+      <div class="section-eyebrow reveal" style="margin-bottom:1rem;" data-fr="Langues" data-en="Languages">Langues</div>
       <div class="langs-row">
         <div class="lang-card reveal">
           <div class="lang-flag">
             <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#c1272d"></circle><path d="M12 6l1.4 4.3h4.5l-3.6 2.7 1.4 4.3-3.7-2.7-3.7 2.7 1.4-4.3-3.6-2.7h4.5z" fill="#006233"></path></svg>
           </div>
-          <div><div class="lang-name">Arabe</div><div class="lang-level">Langue maternelle</div></div>
+          <div>
+            <div class="lang-name" data-fr="Arabe" data-en="Arabic">Arabe</div>
+            <div class="lang-level" data-fr="Langue maternelle" data-en="Native language">Langue maternelle</div>
+          </div>
         </div>
         <div class="lang-card reveal">
           <div class="lang-flag">
             <svg width="24" height="24" viewBox="0 0 24 24"><rect x="1" y="1" width="22" height="22" rx="11" fill="#fff"></rect><path d="M1 12A11 11 0 0 1 8.3 1.7v20.6A11 11 0 0 1 1 12Z" fill="#0055a4"></path><path d="M23 12a11 11 0 0 1-7.3 10.3V1.7A11 11 0 0 1 23 12Z" fill="#ef4135"></path></svg>
           </div>
-          <div><div class="lang-name">Français</div><div class="lang-level">Courant</div></div>
+          <div>
+            <div class="lang-name" data-fr="Français" data-en="French">Français</div>
+            <div class="lang-level" data-fr="Courant" data-en="Fluent">Courant</div>
+          </div>
         </div>
         <div class="lang-card reveal">
           <div class="lang-flag">
             <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#012169"></circle><path d="M1.5 4.5l21 15M22.5 4.5l-21 15" stroke="#fff" stroke-width="2.4" clip-path="circle(11px at 12px 12px)"></path><path d="M1.5 4.5l21 15M22.5 4.5l-21 15" stroke="#c8102e" stroke-width="1.2" clip-path="circle(11px at 12px 12px)"></path><path d="M12 1v22M1 12h22" stroke="#fff" stroke-width="4" clip-path="circle(11px at 12px 12px)"></path><path d="M12 1v22M1 12h22" stroke="#c8102e" stroke-width="2.2" clip-path="circle(11px at 12px 12px)"></path></svg>
           </div>
-          <div><div class="lang-name">Anglais</div><div class="lang-level">Intermédiaire (B1)</div></div>
+          <div>
+            <div class="lang-name" data-fr="Anglais" data-en="English">Anglais</div>
+            <div class="lang-level" data-fr="Intermédiaire (B1)" data-en="Intermediate (B1)">Intermédiaire (B1)</div>
+          </div>
         </div>
       </div>
     </div>
@@ -714,8 +797,8 @@
 <section id="contact">
   <div class="section-inner">
     <div class="contact-card reveal">
-      <div class="contact-title">Travaillons<br><span>ensemble.</span></div>
-      <p class="contact-desc">
+      <div class="contact-title" data-fr="Travaillons<br><span>ensemble.</span>" data-en="Let's work<br><span>together.</span>">Travaillons<br><span>ensemble.</span></div>
+      <p class="contact-desc" data-fr="Disponible pour des opportunités en CDI, stage ou freelance. N'hésitez pas à me contacter !" data-en="Available for full-time, internship, or freelance opportunities. Feel free to reach out!">
         Disponible pour des opportunités en CDI, stage ou freelance.
         N'hésitez pas à me contacter !
       </p>
@@ -726,7 +809,7 @@
             <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M22 6l-10 7L2 6"></path></svg>
           </div>
           <div>
-            <div style="font-size:12px;color:var(--gray);margin-bottom:2px;">Email</div>
+            <div style="font-size:12px;color:var(--gray);margin-bottom:2px;" data-fr="Email" data-en="Email">Email</div>
             <div style="font-size:14px;font-weight:500;">elbyarisanae@gmail.com</div>
           </div>
         </a>
@@ -735,24 +818,11 @@
             <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           </div>
           <div>
-            <div style="font-size:12px;color:var(--gray);margin-bottom:2px;">Téléphone</div>
+            <div style="font-size:12px;color:var(--gray);margin-bottom:2px;" data-fr="Téléphone" data-en="Phone">Téléphone</div>
             <div style="font-size:14px;font-weight:500;" class="phone-text">+212 681 768 607</div>
           </div>
         </div>
 
-<script>
-function copyPhone(el) {
-  const phoneNumber = "+212681768607";
-  navigator.clipboard.writeText(phoneNumber).then(() => {
-    const textEl = el.querySelector('.phone-text');
-    const original = textEl.textContent;
-    textEl.textContent = "Copié !";
-    setTimeout(() => {
-      textEl.textContent = original;
-    }, 1500);
-  });
-}
-</script>
         <a href="https://linkedin.com/in/sanae-el-byari-0273681b2" target="_blank" class="contact-link">
           <div class="contact-link-icon">
             <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
@@ -775,7 +845,7 @@ function copyPhone(el) {
 
       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=elbyarisanae@gmail.com" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;padding:16px;">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-        Envoyer un message
+        <span data-fr="Envoyer un message" data-en="Send a message">Envoyer un message</span>
       </a>
     </div>
   </div>
@@ -785,7 +855,7 @@ function copyPhone(el) {
      FOOTER
 ═══════════════════════════════════════════ -->
 <footer>
-  <p>© 2026 <span>Sanae EL-BYARI</span> · Ingénieure en Génie Logiciel · Rabat, Maroc</p>
+  <p>© 2026 <span>Sanae EL-BYARI</span> · <span data-fr="Ingénieure en Génie Logiciel" data-en="Software Engineer">Ingénieure en Génie Logiciel</span> · <span data-fr="Rabat, Maroc" data-en="Rabat, Morocco">Rabat, Maroc</span></p>
 </footer>
 
 <script src="js/main.js"></script>
